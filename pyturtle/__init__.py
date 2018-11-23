@@ -73,13 +73,13 @@ class Turtle(object):
                     return True
         return False
 
-    def plot(self):
+    def plot(self, args=''):
         fig = plt.figure()
         ax = fig.add_subplot(111, projection='3d')
         for route in self._log:
             _route = np.array(route)
             try:
-                    ax.plot(_route[:,0], _route[:,1], _route[:,2])
+                    ax.plot(_route[:,0], _route[:,1], _route[:,2], args)
             except IndexError as e:
                 self._logger.error("Failed to Plot Path, did you lower the pen?")
                 raise e
