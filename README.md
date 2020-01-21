@@ -29,11 +29,13 @@ my_turtle = pt.PyTurtle()
 my_turtle.pendown()
 
 for i in range(8):
-    my_turtle.right(135)
+    my_turtle.right(45)
     my_turtle.forward(40)
 
 my_turtle.plot()
 ```
+
+To clear the canvas use the `clear()` function.
 
 In addition we can draw in the 3D plane using the commands `declinate` and `elevate` and specifying an angle:
 
@@ -45,7 +47,7 @@ my_turtle = pt.PyTurtle()
 my_turtle.pendown()
 
 for i in range(8):
-    my_turtle.elevate(135)
+    my_turtle.elevate(45)
     my_turtle.forward(40)
 
 my_turtle.plot()

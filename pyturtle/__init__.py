@@ -85,3 +85,6 @@ class Turtle(object):
                 raise e
         plt.show()
 
+    def clear(self):
+        self._log = [[]]
+
